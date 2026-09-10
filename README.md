@@ -1,4 +1,4 @@
-# Umang Raj — 3D AI & ML Portfolio
+# Umang Raj — Portfolio
 
 An interactive, cutting-edge 3D student portfolio and CV website built for **Umang Raj**, an Artificial Intelligence and Machine Learning student at Acharya Institute of Technology, Greater Bengaluru.
 
