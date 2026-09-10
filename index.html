@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Umang Raj — AI & ML Student Portfolio. Minimalist 3D Website." />
+    <title>Umang Raj — AI &amp; ML Student Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Minimalist 3D WebGL Background -->
+    <div id="webgl-canvas-container" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Minimalist Header -->
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="#top" aria-label="Umang Raj home">UR<span>®</span></a>
+        
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#profile">Profile</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn-audio" id="sound-toggle-btn" aria-label="Toggle sound effects">
+            Sound: Off
+          </button>
+          <button class="btn-primary open-cv-modal" aria-label="View CV">
+            CV ↓
+          </button>
+          <a class="btn-secondary" href="cv.html" target="_blank" rel="noreferrer">
+            Print CV ↗
+          </a>
+          <button class="mobile-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero wrap section">
+        <p class="eyebrow reveal">Student Portfolio · 2026</p>
+        <div class="hero-grid">
+          <h1 class="reveal">
+            Learning today.<br />
+            <em>Building tomorrow.</em>
+          </h1>
+          <div class="hero-intro reveal">
+            <p>
+              I’m <strong>Umang Raj</strong>, an Artificial Intelligence &amp; Machine Learning student at Acharya Institute of Technology, Greater Bengaluru. Developing skills in Python, algorithmic logic, and data-driven systems.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="#certificates">
+                Explore Journey ↓
+              </a>
+              <button class="btn-secondary open-cv-modal">
+                View CV ↗
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-facts-row reveal">
+          <div class="hero-fact">
+            <span>Location</span>
+            <strong>Greater Bengaluru, India</strong>
+          </div>
+          <div class="hero-fact">
+            <span>Degree</span>
+            <strong>B.E. in AI &amp; ML</strong>
+          </div>
+          <div class="hero-fact">
+            <span>Institution</span>
+            <strong>Acharya Institute of Technolgy</strong>
+          </div>
+          <div class="hero-fact">
+            <span>Target</span>
+            <strong>Graduating 2029</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- 01: PROFILE -->
+      <section id="profile" class="profile wrap section">
+        <p class="eyebrow reveal">01 / Profile</p>
+        <div class="profile-content">
+          <p class="display-quote reveal">
+            I am learning with <mark>curiosity</mark>, turning every course, certificate, and project into a step toward my future career.
+          </p>
+          <div class="tilt-card profile-meta-card reveal">
+            <div>
+              <span>Student</span>
+              <strong>Umang Raj</strong>
+            </div>
+            <div>
+              <span>Degree</span>
+              <strong>B.E. Artificial Intelligence &amp; Machine Learning</strong>
+            </div>
+            <div>
+              <span>Campus</span>
+              <strong>Acharya Institute of Technology</strong>
+            </div>
+            <div>
+              <span>Graduation</span>
+              <strong>Class of 2029</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02: CERTIFICATES -->
+      <section id="certificates" class="certificates wrap section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow reveal">02 / Certificates</p>
+            <h2 class="reveal">Verified Credentials</h2>
+          </div>
+          <p class="reveal">
+            Coursework completed to build practical competence in Python and modern AI foundations.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="tilt-card cert-card reveal" data-cert-id="python-linkedin">
+            <div class="cert-thumb">
+              <img src="assets/certificates/linkedin-learning-python-umang-raj.jpg" alt="Learning Python - LinkedIn Learning" loading="lazy" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Learning Python</h3>
+                <p>LinkedIn Learning · Jul 2026</p>
+              </div>
+              <div class="cert-footer">
+                <span>Verified</span>
+                <span class="link-inspect">Preview ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="tilt-card cert-card reveal" data-cert-id="python-kaggle">
+            <div class="cert-thumb">
+              <img src="assets/certificates/kaggle-python-umang-raj.png" alt="Python - Kaggle Learn" loading="lazy" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Python</h3>
+                <p>Kaggle Learn · Jul 2026</p>
+              </div>
+              <div class="cert-footer">
+                <span>Verified</span>
+                <span class="link-inspect">Preview ↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="tilt-card cert-card reveal" data-cert-id="modern-ai-cisco">
+            <div class="cert-thumb">
+              <img src="assets/certificates/introduction-modern-ai-umang-raj.jpg" alt="Introduction to Modern AI - Cisco" loading="lazy" />
+            </div>
+            <div class="cert-info">
+              <div>
+                <h3>Introduction to Modern AI</h3>
+                <p>Cisco Networking Academy · Feb 2026</p>
+              </div>
+              <div class="cert-footer">
+                <span>Credly Badge</span>
+                <span class="link-inspect">Preview ↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03: EDUCATION -->
+      <section id="education" class="education wrap section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow reveal">03 / Education</p>
+            <h2 class="reveal">Academic Pathway</h2>
+          </div>
+          <p class="reveal">
+            Foundational institutions that have shaped my analytical thinking and problem-solving skills.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-row reveal">
+            <div class="timeline-date">2025 — 2029</div>
+            <div class="timeline-title">
+              <h3>B.E. in Artificial Intelligence &amp; Machine Learning</h3>
+              <p>Acharya Institute of Technology</p>
+            </div>
+            <div class="timeline-desc">
+              Core studies in artificial intelligence, machine learning, Python programming, and algorithmic problem solving.
+            </div>
+          </div>
+
+          <div class="timeline-row reveal">
+            <div class="timeline-date">2023 — 2025</div>
+            <div class="timeline-title">
+              <h3>Class 12 / Pre-University</h3>
+              <p>Cambridge Pre-University College</p>
+            </div>
+            <div class="timeline-desc">
+              Completed pre-university education with an emphasis on science, mathematics, and logic.
+            </div>
+          </div>
+
+          <div class="timeline-row reveal">
+            <div class="timeline-date">2022 — 2023</div>
+            <div class="timeline-title">
+              <h3>Class 10 / CBSE</h3>
+              <p>Naryan E-Techno School</p>
+            </div>
+            <div class="timeline-desc">
+              Completed secondary school education with academic distinction.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04: PROJECTS -->
+      <section id="projects" class="projects wrap section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow reveal">04 / Projects</p>
+            <h2 class="reveal">Featured Work</h2>
+          </div>
+          <p class="reveal">
+            Hands-on software projects and public coding practice.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured: Expense Tracker -->
+          <div class="tilt-card project-card reveal">
+            <div>
+              <span class="project-tag">Latest Repository · 2026</span>
+              <h3>Personal Expense Tracker</h3>
+              <p>
+                A lightweight Python application for tracking daily spending. Features a modular architecture separating data entry, search, display, and calculations, built with structured nested dictionaries.
+              </p>
+              <ul class="project-pills">
+                <li>Python 3</li>
+                <li>Modular Architecture</li>
+                <li>CLI Application</li>
+                <li>Nested Dictionaries</li>
+              </ul>
+            </div>
+            <div>
+              <a class="btn-primary" href="https://github.com/Umang1Raj/Expense-Tracker" target="_blank" rel="noreferrer">
+                View on GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Practice Lab: Learn -->
+          <div class="tilt-card project-card reveal">
+            <div>
+              <span class="project-tag">Foundational Lab</span>
+              <h3>Python Learning &amp; Practice</h3>
+              <p>
+                Systematic documentation of Python fundamentals, pattern problems, algorithmic exercises, and data structures.
+              </p>
+              <ul class="project-pills">
+                <li>Python</li>
+                <li>Jupyter Notebook</li>
+                <li>Logic Building</li>
+              </ul>
+            </div>
+            <div>
+              <a class="btn-secondary" href="https://github.com/Umang1Raj/Learn" target="_blank" rel="noreferrer">
+                View on GitHub ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05: SKILLS -->
+      <section id="skills" class="skills wrap section">
+        <p class="eyebrow reveal">05 / Skills</p>
+        <h2 class="reveal" style="font-size:clamp(28px, 3.2vw, 42px); letter-spacing:-0.04em;">Core Capabilities</h2>
+        
+        <div class="skills-wrap reveal">
+          <div class="skill-item">Python</div>
+          <div class="skill-item">AI &amp; Data Science</div>
+          <div class="skill-item">Introduction to Modern AI</div>
+          <div class="skill-item">Creative Problem Solving</div>
+          <div class="skill-item">Algorithmic Thinking</div>
+          <div class="skill-item">C++ (Basic)</div>
+          <div class="skill-item">Prompt Writing</div>
+        </div>
+      </section>
+
+      <!-- 06: CONNECT -->
+      <section id="contact" class="contact wrap section">
+        <p class="eyebrow reveal">06 / Connect</p>
+        <h2 class="contact-headline reveal">
+          Let’s connect and<br />
+          learn together.
+        </h2>
+
+        <div class="contact-channels reveal">
+          <a class="tilt-card contact-box" href="mailto:umangraj609@gmail.com">
+            <span>Email</span>
+            <strong>umangraj609@gmail.com</strong>
+            <b>↗</b>
+          </a>
+
+          <a class="tilt-card contact-box" href="https://www.linkedin.com/in/umangraj609" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>/umangraj609</strong>
+            <b>↗</b>
+          </a>
+
+          <a class="tilt-card contact-box" href="https://github.com/Umang1Raj" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>/Umang1Raj</strong>
+            <b>↗</b>
+          </a>
+
+          <a class="tilt-card contact-box" href="https://www.instagram.com/mr.umangraj1?igsi=MTB0OGN3YnlydnFxZw==" target="_blank" rel="noreferrer">
+            <span>Instagram</span>
+            <strong>@mr.umangraj1</strong>
+            <b>↗</b>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Umang Raj</span>
+        <div class="footer-links">
+          <button class="open-cv-modal" style="cursor:pointer;">View CV</button>
+          <a href="cv.html" target="_blank" rel="noreferrer">Print CV ↗</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CERTIFICATE PREVIEW MODAL -->
+    <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <div class="modal-backdrop" id="cert-modal-backdrop"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 id="cert-modal-title">Certificate Details</h3>
+          <button class="modal-close-btn" id="cert-modal-close" aria-label="Close modal">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-img-container">
+            <img id="cert-modal-img" src="" alt="Certificate" />
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:12px;">
+            <span id="cert-modal-issuer" style="color:var(--lime);"></span>
+            <span id="cert-modal-date" style="color:var(--muted);"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span style="font-family:var(--font-mono); font-size:11px; color:var(--muted);">Official Credential</span>
+          <a class="btn-primary" id="cert-modal-link" href="#" target="_blank" rel="noreferrer">
+            Verify Credential ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV PREVIEW MODAL -->
+    <div class="modal-overlay" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+      <div class="modal-backdrop" id="cv-modal-backdrop"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 id="cv-modal-title">Umang Raj — Résumé</h3>
+          <button class="modal-close-btn" id="cv-modal-close" aria-label="Close modal">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="cv-preview-container">
+            <h1>Umang Raj</h1>
+            <p class="cv-subtitle">B.E. AI &amp; ML Student · Acharya Institute of Technology, Bengaluru</p>
+
+            <div class="cv-block">
+              <h4>Profile</h4>
+              <p>AI and Machine Learning student developing a strong foundation in Python, problem solving, and data-driven thinking. Documenting learning through hands-on practice and public GitHub projects.</p>
+            </div>
+
+            <div class="cv-block">
+              <h4>Education</h4>
+              <div style="margin-bottom:8px;">
+                <strong>B.E. in AI &amp; ML — Acharya Institute of Technology</strong>
+                <p style="font-family:var(--font-mono); font-size:11px; color:var(--lime);">2025 – 2029</p>
+              </div>
+              <div style="margin-bottom:8px;">
+                <strong>Class 12 / Pre-University — Cambridge Pre-University College</strong>
+                <p style="font-family:var(--font-mono); font-size:11px; color:var(--muted);">2023 – 2025</p>
+              </div>
+              <div>
+                <strong>Class 10 / CBSE — Naryan E-Techno School</strong>
+                <p style="font-family:var(--font-mono); font-size:11px; color:var(--muted);">2022 – 2023</p>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h4>Projects</h4>
+              <div style="margin-bottom:8px;">
+                <strong>Personal Expense Tracker (GitHub: Umang1Raj/Expense-Tracker)</strong>
+                <p style="margin-top:2px;">Modular Python application with nested dictionary data structures, expense categorization, and daily total calculations.</p>
+              </div>
+              <div>
+                <strong>Python Learning &amp; Practice (GitHub: Umang1Raj/Learn)</strong>
+                <p style="margin-top:2px;">Technical notes, Python practice programs, pattern logic, and problem-solving exercises documented in public.</p>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h4>Certificates</h4>
+              <p>• <strong>Learning Python</strong> — LinkedIn Learning (Jul 2026)</p>
+              <p>• <strong>Python</strong> — Kaggle Learn (Jul 2026)</p>
+              <p>• <strong>Introduction to Modern AI</strong> — Cisco Networking Academy (Feb 2026)</p>
+            </div>
+
+            <div class="cv-block" style="border-bottom:none;">
+              <h4>Skills</h4>
+              <p>Python · C++ (basic) · Problem solving · Creative problem solving · AI &amp; Data Science · Modern AI fundamentals</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn-secondary" href="cv.html" target="_blank" rel="noreferrer">
+            Open Full CV Page ↗
+          </a>
+          <button class="btn-primary" onclick="window.print()">
+            Print / Save PDF ↓
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/sound-fx.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
