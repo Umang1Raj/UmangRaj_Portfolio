@@ -87,6 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
       date: 'Feb 2026',
       img: 'assets/certificates/introduction-modern-ai-umang-raj.jpg',
       link: 'https://www.credly.com/badges/cf52b8d5-cd51-47bd-914d-ec13456e7e37'
+    },
+    'ey-ms-ai-passport': {
+      title: 'EY–Microsoft AI Skills Passport',
+      issuer: 'EY & Microsoft',
+      date: 'Certificate of Completion',
+      img: 'assets/certificates/ey-microsoft-ai-skills-passport.jpg',
+      link: 'assets/certificates/ey-microsoft-ai-skills-passport.jpg'
     }
   };
 
